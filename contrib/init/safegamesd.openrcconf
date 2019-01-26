@@ -1,0 +1,26 @@
+# /etc/conf.d/safegamesd: config file for /etc/init.d/safegamesd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/safegames/safegames.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/safegamesd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/safegamesd.pid"
+
+# Where to write safegamesd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/safegamesd"
+
+# User and group to own safegamesd process
+#BITCOIND_USER="safegames"
+#BITCOIND_GROUP="safegames"
+
+# Path to safegamesd executable
+#BITCOIND_BIN="/usr/bin/safegamesd"
+
+# Nice value to run safegamesd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
