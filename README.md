@@ -16,7 +16,7 @@ More information at [safegames.org](http://www.safegames.org) Visit our ANN thre
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoW Phase)</td><td>400 SGS</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>205,000,000</td></tr>
 <tr><td>Premine</td><td>2,050,000 SGS*</td></tr>
 </table>
 
