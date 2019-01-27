@@ -15,19 +15,17 @@ More information at [safegames.org](http://www.safegames.org) Visit our ANN thre
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 SGS</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>60,000 SGS*</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>400 SGS</td></tr>
+<tr><td>Max Coin Supply (PoS Phase)</td><td>205,000,000</td></tr>
+<tr><td>Premine</td><td>2,050,000 SGS*</td></tr>
 </table>
-
-*60,000 SGS Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/SAFEGAMES/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
 
 ### Reward Distribution
 
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 SGS</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/SAFEGAMES/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+<tr><td>1</td><td>2,050,000 SGS</td><td>Initial Pre-mine</td></tr>
 </table>
 
 ### PoW Rewards Breakdown
