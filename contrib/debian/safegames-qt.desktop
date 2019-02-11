@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SAFEGAMES
+Comment=SAFEGAMES P2P Cryptocurrency
+Comment[fr]=SAFEGAMES, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SAFEGAMES, eşten eşe kriptografik sanal para birimi
+Exec=safegames-qt %u
+Terminal=false
+Type=Application
+Icon=safegames128
+MimeType=x-scheme-handler/safegames;
+Categories=Office;Finance;
