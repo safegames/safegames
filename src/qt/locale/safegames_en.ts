@@ -2513,8 +2513,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</sour
     </message>
     <message>
         <location line="+25"/>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Port of the proxy (e.g. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Port of the proxy (e.g. 61222)</translation>
     </message>
     <message>
         <location line="+36"/>
@@ -6586,8 +6586,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation type="unfinished">(61555 could be used only on mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation type="unfinished">(61222 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6601,7 +6601,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 61555 for mainnet)</source>
+        <source>(must be 61222 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

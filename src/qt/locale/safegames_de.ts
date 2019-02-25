@@ -1983,8 +1983,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Port des Proxies (z.B. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Port des Proxies (z.B. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5137,8 +5137,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 kann nur im Mainnet verwendet werden)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 kann nur im Mainnet verwendet werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5149,8 +5149,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(muss im Mainnet 61555 sein)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(muss im Mainnet 61222 sein)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

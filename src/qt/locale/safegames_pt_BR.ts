@@ -1734,8 +1734,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Porta:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Porta do proxy (e.g. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Porta do proxy (e.g. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -3728,8 +3728,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 could be used only on mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3740,8 +3740,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(deve ser 61555 para mainnet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(deve ser 61222 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

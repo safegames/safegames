@@ -1744,8 +1744,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Port of the proxy (e.g. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Port of the proxy (e.g. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "SAFEGAMES Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 could be used only on mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "SAFEGAMES Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(must be 61555 for mainnet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(must be 61222 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

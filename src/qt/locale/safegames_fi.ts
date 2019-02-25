@@ -1246,8 +1246,8 @@ Please check the address and try again.</source>
         <translation>&amp;Portti:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Proxyn portti (esim. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Proxyn portti (esim. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>

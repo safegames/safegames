@@ -1992,8 +1992,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Poort:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Proxy-poort (v.b. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Proxy-poort (v.b. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5146,8 +5146,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(moet 61555 voor mainnet zijn)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(moet 61222 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

@@ -1988,8 +1988,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Порт:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Порт за проксито (например 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Порт за проксито (например 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5130,8 +5130,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 може да се ползва само в mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 може да се ползва само в mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5142,8 +5142,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(по подразбиране: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(трябва да е 61555 за mainnet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(трябва да е 61222 за mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

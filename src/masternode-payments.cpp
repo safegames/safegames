@@ -175,6 +175,8 @@ void DumpMasternodePayments()
 
 bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMinted)
 {
+    //LogPrintf("SGS----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
+
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (pindexPrev == NULL) return true;
 
@@ -191,7 +193,6 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         LogPrint("masternode","IsBlockValueValid() : WARNING: Couldn't find previous block\n");
     }
 
-    //LogPrintf("XX69----------> IsBlockValueValid(): nMinted: %d, nExpectedValue: %d\n", FormatMoney(nMinted), FormatMoney(nExpectedValue));
 
     if (!masternodeSync.IsSynced()) { //there is no budget data to use to check anything
         //super blocks will always be on these blocks, max 100 per budgeting
@@ -199,6 +200,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
             return true;
         } else {
             if (nMinted > nExpectedValue) {
+                LogPrint("masternode","IsBlockValueValid() : SGS CHECK 0\n");
                 return false;
             }
         }
@@ -206,6 +208,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
 
         //are these blocks even enabled
         if (!IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS)) {
+            LogPrint("masternode","IsBlockValueValid() : SGS CHECK 1\n");
             return nMinted <= nExpectedValue;
         }
 
@@ -214,6 +217,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
             return true;
         } else {
             if (nMinted > nExpectedValue) {
+                LogPrint("masternode","IsBlockValueValid() : SGS CHECK 2\n");
                 return false;
             }
         }

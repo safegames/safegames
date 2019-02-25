@@ -1992,8 +1992,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Порт</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Порт прокси сервера (например: 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Порт прокси сервера (например: 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5145,8 +5145,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 можно использовать только в сети)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 можно использовать только в сети)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5157,8 +5157,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(неуплата: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(должен быть 61555 для mainet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(должен быть 61222 для mainet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

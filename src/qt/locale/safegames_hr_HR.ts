@@ -1992,8 +1992,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Port proxya (npr. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Port proxya (npr. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5147,8 +5147,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Morate odrediti masternodeprivkey u konfiguraciji. Za pomoć pogledajte dokumentaciju.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 se može koristiti samo na mainnetu)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 se može koristiti samo na mainnetu)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5159,8 +5159,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(mora biti 61555 za glavnu mrežu)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(mora biti 61222 za glavnu mrežu)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

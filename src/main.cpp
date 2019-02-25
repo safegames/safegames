@@ -1815,7 +1815,7 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0;
 if (nHeight == 0) { nSubsidy = 2050000 * COIN; }
 else if (nHeight <= 300) { nSubsidy = 2 * COIN; } //POW phase
-else if (nHeight <= 20000) { nSubsidy = 2 * COIN; }
+else if (nHeight <  20006) { nSubsidy = 2 * COIN; }
 else if (nHeight <= 30000) { nSubsidy = 10 * COIN; }
 else if (nHeight <= 40000) { nSubsidy = 11.25 * COIN; }
 else if (nHeight <= 50000) { nSubsidy = 12.5 * COIN; }
@@ -1870,7 +1870,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
     if (nHeight < 2) { ret = 0; } 
 	else if (nHeight <= 300) { ret = blockValue * 1; }
-	else if (nHeight <= 20000) { ret = blockValue * 0.75; }
+	else if (nHeight < 20006) { ret = blockValue * 0.75; }
 	else if (nHeight <= 30000) { ret = blockValue * 0.755; }
     else if (nHeight <= 40000) { ret = blockValue * 0.76; }
     else if (nHeight <= 50000) { ret = blockValue * 0.765; }
@@ -2867,7 +2867,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
         RecalculateZSGSMinted();
         RecalculateZSGSSpent();
-        RecalculateSGSSupply(1);//Params().Zerocoin_StartHeight());
+        RecalculateSGSSupply(Params().Zerocoin_StartHeight());
     }
 
     //Track zSGS money supply in the block index
@@ -2880,7 +2880,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-    //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
+    //LogPrintf("SGS----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
     //          FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nMoneySupplyPrev), FormatMoney(pindex->nMoneySupply));
 
@@ -2889,7 +2889,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    CAmount nExpectedMint = GetBlockValue(pindex->nHeight); //SGS TRIAL
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 

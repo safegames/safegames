@@ -3,8 +3,8 @@ TOR SUPPORT IN SAFEGAMES
 
 It is possible to run SAFEGAMES as a Tor hidden service, and connect to such services.
 
-The following directions assume you have a Tor proxy running on port 61555. Many
-distributions default to having a SOCKS proxy listening on port 61555, but others
+The following directions assume you have a Tor proxy running on port 61222. Many
+distributions default to having a SOCKS proxy listening on port 61222, but others
 may not. In particular, the Tor Browser Bundle defaults to listening on a random
 port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.html.en#TBBSocksPort)
 for how to properly configure Tor.
@@ -36,14 +36,14 @@ outgoing connections be anonymized, but more is possible.
 ```
 
 An example how to start the client if the Tor proxy is running on local host on
-port 61555 and only allows .onion nodes to connect:
+port 61222 and only allows .onion nodes to connect:
 ```
-./safegamesd -onion=127.0.0.1:61555 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
+./safegamesd -onion=127.0.0.1:61222 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:989
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./safegamesd -proxy=127.0.0.1:61555
+./safegamesd -proxy=127.0.0.1:61222
 ```
 
 Run a SAFEGAMES hidden server
@@ -54,12 +54,12 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 ```
 ClientOnly 1
-SOCKSPort 61555
+SOCKSPort 61222
 SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:61555
+HiddenServicePort 989 127.0.0.1:61222
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -69,7 +69,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your safegamesd's P2P listen port (61555 by default).
+your safegamesd's P2P listen port (61222 by default).
 ```
 -externalip=X   You can tell safegames about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
@@ -92,7 +92,7 @@ your safegamesd's P2P listen port (61555 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./safegamesd -proxy=127.0.0.1:61555 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
+./safegamesd -proxy=127.0.0.1:61222 -externalip=dnetzj6l4cvo2fxy.onion:989 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
@@ -102,12 +102,12 @@ specify:
 ./safegamesd ... -discover
 ```
 
-and open port 61555 on your firewall (or use -upnp).
+and open port 61222 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./safegamesd -onion=127.0.0.1:61555 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
+./safegamesd -onion=127.0.0.1:61222 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
 List of known SAFEGAMES Tor relays

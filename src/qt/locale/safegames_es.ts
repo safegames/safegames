@@ -1992,8 +1992,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Puerto:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Puerto del proxy (p.e. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Puerto del proxy (p.e. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5146,8 +5146,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 puede ser utilizado solo en mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 puede ser utilizado solo en mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5158,8 +5158,8 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>(predeterminado: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(debe ser 61555 para un mainnet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(debe ser 61222 para un mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

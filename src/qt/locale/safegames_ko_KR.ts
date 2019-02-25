@@ -1992,8 +1992,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;포트:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>프록시 포트 (예: 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>프록시 포트 (예: 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5147,8 +5147,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 은 메인넷에서만 사용될 수 있습니다)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 은 메인넷에서만 사용될 수 있습니다)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5159,8 +5159,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(메인넷 일경우 61555)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(메인넷 일경우 61222)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

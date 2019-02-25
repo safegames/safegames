@@ -1979,8 +1979,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Proxyns port (t.ex. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Proxyns port (t.ex. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -5062,8 +5062,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Du måste specifiera en masternodeprivkey i konfigurationen. Var vänlig se dokumentationen för hjälp.</translation>
     </message>
     <message>
-        <source>(61555 could be used only on mainnet)</source>
-        <translation>(61555 kunde endast användas på mainnet)</translation>
+        <source>(61222 could be used only on mainnet)</source>
+        <translation>(61222 kunde endast användas på mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -5074,8 +5074,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>(standard: 1)</translation>
     </message>
     <message>
-        <source>(must be 61555 for mainnet)</source>
-        <translation>(måste vara 61555 för mainnet)</translation>
+        <source>(must be 61222 for mainnet)</source>
+        <translation>(måste vara 61222 för mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

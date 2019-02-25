@@ -1947,8 +1947,8 @@ https://www.transifex.com/safegames-project/safegames-project-translations</tran
         <translation>&amp;Port:</translation>
     </message>
     <message>
-        <source>Port of the proxy (e.g. 61555)</source>
-        <translation>Port of the proxy (e.g. 61555)</translation>
+        <source>Port of the proxy (e.g. 61222)</source>
+        <translation>Port of the proxy (e.g. 61222)</translation>
     </message>
     <message>
         <source>&amp;Window</source>

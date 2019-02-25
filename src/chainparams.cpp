@@ -113,7 +113,7 @@ public:
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0x73;
         vAlertPubKey = ParseHex("048bef5bff7b104900aae81bc5531b43cd63c44d779b862803d3cb03289dfe6b5120edd227f601f598263afeea90bc5eccad48b4c0cbe7cc8cf47c39417cb045ce");
-        nDefaultPort = 61555;
+        nDefaultPort = 61222;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // SAFEGAMES starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;

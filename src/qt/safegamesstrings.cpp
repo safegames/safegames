@@ -235,10 +235,10 @@ QT_TRANSLATE_NOOP("safegames-core", ""
 QT_TRANSLATE_NOOP("safegames-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("safegames-core", "(61555 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("safegames-core", "(61222 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("safegames-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("safegames-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("safegames-core", "(must be 61555 for mainnet)"),
+QT_TRANSLATE_NOOP("safegames-core", "(must be 61222 for mainnet)"),
 QT_TRANSLATE_NOOP("safegames-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("safegames-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("safegames-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
