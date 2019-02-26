@@ -209,7 +209,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
     // SGS Balance
-    CAmount nTotalBalance = balance + unconfirmedBalance + nLockedBalance;
+    CAmount nTotalBalance = nLockedBalance > 0 ? balance + unconfirmedBalance : balance + nLockedBalance;
     CAmount sgsAvailableBalance = balance - immatureBalance;
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance + watchImmatureBalance;    
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance - nLockedBalance; // increment nLockedBalance twice because it was added to
