@@ -2880,9 +2880,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-    //LogPrintf("SGS----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
-    //          FormatMoney(nValueOut), FormatMoney(nValueIn),
-    //          FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nMoneySupplyPrev), FormatMoney(pindex->nMoneySupply));
+    LogPrintf("SGS----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
+              FormatMoney(nValueOut), FormatMoney(nValueIn),
+              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nMoneySupplyPrev), FormatMoney(pindex->nMoneySupply));
 
     int64_t nTime1 = GetTimeMicros();
     nTimeConnect += nTime1 - nTimeStart;
@@ -4410,7 +4410,14 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
 bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex* const pindexPrev, bool fCheckPOW, bool fCheckMerkleRoot)
 {
     AssertLockHeld(cs_main);
-    assert(pindexPrev == chainActive.Tip());
+    //assert(pindexPrev == chainActive.Tip());
+
+    /*Added SGS error management 2019 02 28 - discussion with investor*/
+    if (!(pindexPrev && pindexPrev == chainActive.Tip()))
+    {
+        LogPrintf(" \r\n ** TestBlockValidity FAILED - pindexNew->pprev != chainActive.Tip() (assert(pindexNew->pprev == chainActive.Tip())); ** \r\n");
+        return false;
+    }
 
     CCoinsViewCache viewNew(pcoinsTip);
     CBlockIndex indexDummy(block);
