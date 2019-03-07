@@ -2880,9 +2880,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-    LogPrintf("SGS----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
-              FormatMoney(nValueOut), FormatMoney(nValueIn),
-              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nMoneySupplyPrev), FormatMoney(pindex->nMoneySupply));
+    //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s moneysuplyprev: %s moneysupply: %s\n",
+    //          FormatMoney(nValueOut), FormatMoney(nValueIn),
+    //          FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nMoneySupplyPrev), FormatMoney(pindex->nMoneySupply));
 
     int64_t nTime1 = GetTimeMicros();
     nTimeConnect += nTime1 - nTimeStart;
