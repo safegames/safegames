@@ -118,7 +118,11 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
     // Make sure to create the correct block version after zerocoin is enabled
     bool fZerocoinActive = nHeight >= Params().Zerocoin_StartHeight();
-    pblock->nVersion = 4;
+    bool fZerocoinActive2 = nHeight >= Params().Zerocoin_Block_V2_Start();
+    if (fZerocoinActive2)
+        pblock->nVersion = 4;
+    else
+        pblock->nVersion = 3;
 
     // -regtest only: allow overriding block.nVersion with
     // -blockversion=N to test forking scenarios
