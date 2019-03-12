@@ -1,7 +1,7 @@
 SAFEGAMES Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/SAFEGAMES-Project/SAFEGAMES.svg?branch=master)](https://travis-ci.org/SAFEGAMES-Project/SAFEGAMES) [![GitHub version](https://badge.fury.io/gh/SAFEGAMES-Project%2FSAFEGAMES.svg)](https://badge.fury.io/gh/SAFEGAMES-Project%2FSAFEGAMES)
+[![Build Status](https://travis-ci.org/SAFEGAMES-Project/SAFEGAMES.svg?branch=master)](https://travis-ci.org/SAFEGAMES-Project/SAFEGAMES) [![GitHub version](https://badge.fury.io/gh/safegames%2Fsafegames.svg)](https://badge.fury.io/gh/safegames%2Fsafegames)
 
 SAFEGAMES is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of SAFEGAMES is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
 - Anonymized transactions using the [_Zerocoin Protocol_](http://www.safegames.org/zsgs).
