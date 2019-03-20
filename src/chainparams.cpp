@@ -53,13 +53,17 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000012cff8e9a83e57588462668f5cb48a579b7466c89d30e305d3935b56cfa"));
+    (0, uint256("0x0000012cff8e9a83e57588462668f5cb48a579b7466c89d30e305d3935b56cfa"))
+    (256, uint256("0x00000110ed3d869610319cd452f620f19cb154061f9e06f67a73ccb2c44078f6"))
+    (12152, uint256("0xd419b2d911ba8dd035a03aaff11fba5e7b6b8a2f7c7932dd949ade23e6a616f1"))
+    (30000, uint256("0x2c192c2d8ff6a61578cdb028f4c27639fda832396e1fd5681366417f58f2accd"))
+    (48978, uint256("0xa21d0d79e55265f57819a029fcfeb885eee6814657094ef9078307c41561a61c"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1548459172, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1552837497, // * UNIX timestamp of last checkpoint block
+    96423,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -138,7 +142,7 @@ public:
         nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 268200*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 50000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 800000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nEnforceNewSporkKey = 1585158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1587811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
